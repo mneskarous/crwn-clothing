@@ -25,7 +25,7 @@ export default class SignIn extends Component {
     const { value, name } = event.target;
     this.setState({
       [ name ]: value
-    }, () => console.log(this.state));
+    });
   }
 
   render() {
@@ -36,6 +36,7 @@ export default class SignIn extends Component {
         <span>Sign in with your email and password.</span>
 
         <form onSubmit={this.handleSubmit}>
+          <label>Email</label>
           <input 
             name="email" 
             value={email} 
@@ -43,7 +44,7 @@ export default class SignIn extends Component {
             onChange={this.handleChange}
             required 
           />
-          <label>Email</label>
+          <label>Password</label>
           <input 
             name="password" 
             value={password} 
@@ -51,7 +52,6 @@ export default class SignIn extends Component {
             onChange={this.handleChange}
             required 
           />
-          <label>Password</label>
           <input type="submit" value="Submit Form" />
         </form>
       </div>
