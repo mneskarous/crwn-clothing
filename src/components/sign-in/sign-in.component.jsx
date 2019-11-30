@@ -46,7 +46,6 @@ export default class SignIn extends Component {
             handleChange={this.handleChange}
             required 
             />
-          <label>Email</label>
           <FormInput 
             name="password" 
             value={password} 
@@ -55,7 +54,6 @@ export default class SignIn extends Component {
             handleChange={this.handleChange}
             required 
             />
-          <label>Password</label>
           <input type="submit" value="Submit Form" />
         </form>
       </div>
