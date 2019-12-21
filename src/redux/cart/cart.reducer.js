@@ -1,4 +1,5 @@
 import { CartActionTypes } from './cart.types';
+
 import { 
   addItemToCart,
   removeItemFromCart
@@ -37,7 +38,6 @@ const cartReducer = (state = INITIAL_STATE, action) => {
       return state;
   }
 };
-
 
 
 export default cartReducer;
